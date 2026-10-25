@@ -22,5 +22,19 @@ foreach ($mahasiswa as $data) {
     echo "</tr>";
 }
 
+$mahasiswa[]=array("Name" => "doni",    "NIM" => "220401", "Mobile" => "0812345678");
+echo "</table>";
+
+echo "<table border='1' cellpadding='8' cellspacing='0'>";
+echo "<tr><th>Name</th><th>NIM</th><th>Mobile</th></tr>";
+
+foreach ($mahasiswa as $data) {
+    echo "<tr>";
+    echo "<td>" . $data["Name"] . "</td>";
+    echo "<td>" . $data["NIM"] . "</td>";
+    echo "<td>" . $data["Mobile"] . "</td>";
+    echo "</tr>";
+}
+
 echo "</table>";
 ?>
